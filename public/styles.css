@@ -1,12 +1,3 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-    object-fit: cover;
-}
-
 h1 {
     text-align: center;
     font-size: 4rem;
@@ -45,7 +36,9 @@ h1 {
     }
 }
 
-li {
+/* https://codepen.io/studiojvla/pen/qVbQqW */
+
+.carr-item {
     flex: 0 0 95%;
     height: 60vh;
     width: 100%;
@@ -69,4 +62,82 @@ li {
         height: auto;
         display: block;
     }
+}
+
+.proj-container {
+
+    .proj-title {
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    .proj-list {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+
+        .proj-item {
+            list-style: none;
+            font-weight: bold;
+            width: 10em;
+            margin: 0.5em;
+			border-radius: 15px;
+			text-align: center;
+
+            /* https://www.letsbuildui.dev/articles/how-to-animate-borders-in-css/?utm_source=chatgpt.com */
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+            &::before {
+				content: "";
+				display: block;
+				background: #FF6600;
+				height: 7.8em;
+				width: 1em;
+				position: absolute;
+				animation: rotate 5s linear forwards infinite;
+				z-index: 0;
+				top: 50%;
+				transform-origin: top center;
+            }
+
+            a {
+                text-decoration: none;
+                width: 100%;
+                padding: 0.5em;
+                border-radius: 15px;
+                background: #222;
+				color: #FF6600;
+				position: relative;
+				z-index: 1;
+				margin: 3px;
+
+                &:hover {
+                    color: #222;
+                    background-color: #FF6600;
+                    scale: 1.2;
+                    transition: ease-in-out;
+                }
+
+                &:active {
+                    scale: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
 }
