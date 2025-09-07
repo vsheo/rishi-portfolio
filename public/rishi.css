@@ -88,19 +88,19 @@ body {
 }
 
 /* ====================================================== TYPOGRAFIE CLASSES ====================================================== */
-.font-PlayfairDisplay {
+.font-1 {
     --f-family: 'PlayfairDisplay';
     --fw-regular: 400;
     color: var(--text-primary);
 }
 
-.font-Asimovian {
+.font-2 {
     --f-family: 'Asimovian';
     --fw-regular: 400;
     color: var(--text-primary);
 }
 
-.font-LibertinusKeyboard {
+.font-3 {
     --f-family: 'LibertinusKeyboard';
     --fw-regular: 400;
     color: var(--text-primary);
