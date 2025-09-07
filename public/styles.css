@@ -1,3 +1,16 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+body {
+    background-color: var(--palette-primary);
+}
+
 h1 {
     text-align: center;
     font-size: 4rem;
@@ -15,6 +28,7 @@ h1 {
 .carr-title {
     grid-area: title;
     text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .carrousel {
@@ -26,6 +40,9 @@ h1 {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scroll-marker-group: after;
+    margin: 0 clamp(0.5em, 5vw, 2em);
+    max-width: 850px;
+    justify-self: center;
 
     &::scroll-marker-group {
         grid-area: indicator;
@@ -34,27 +51,41 @@ h1 {
         place-content: center;
         margin-top: 1em;
     }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--palette-secondary);
+        border-radius: 15px;
+    }
 }
+
 
 /* https://codepen.io/studiojvla/pen/qVbQqW */
 
 .carr-item {
     flex: 0 0 95%;
-    height: 60vh;
-    width: 100%;
+    max-width: 800px;
     overflow-y: hidden;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    margin: 0.5em 0.5em 1em 0.5em;
+    margin: 0.5em clamp(0.5em, 5vw, 2em) 1em clamp(0.5em, 5vw, 2em);
     align-self: center;
     justify-self: center;
 
     &::scroll-marker {
         content: '';
-        border: 2px solid #898A8D;
+        border: 2px solid var(--palette-secondary);
         height: 1em;
         width: 1em;
         border-radius: 50%;
+    }
+
+    &::scroll-marker:target-current {
+        background-color: var(--palette-secondary);
     }
 
     img {
@@ -64,98 +95,89 @@ h1 {
     }
 }
 
-.proj-container {
-    .proj-title {
-        margin-top: 3em;
-        text-align: center;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-content: center;
+    gap: 1em;
+    margin: 0 1em;
+
+    @media (min-width: 1031px) {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
     }
 
-    .proj-list {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
+    h2 {
+        grid-column: 1/-1;
+        margin-top: 1.5em;
         text-align: center;
-
-        .proj-subject {
-            list-style: none;
-            font-weight: bold;
-            width: 15em;
-            margin: 0.5em;
-			border-radius: 15px;
-			text-align: center;
-
-            /* https://www.letsbuildui.dev/articles/how-to-animate-borders-in-css/?utm_source=chatgpt.com */
-			position: relative;
-			overflow: hidden;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-
-            &::before {
-				content: "";
-				display: block;
-				background: #FF6600;
-				height: 7.8em;
-				width: 1em;
-				position: absolute;
-				animation: rotate 5s linear forwards infinite;
-				z-index: 0;
-				top: 50%;
-				transform-origin: top center;
-            }
-        }
     }
 }
 
-/* details in proj-list */
-.subject-container {
+.border {
+    list-style: none;
+    font-weight: bold;
+    width: 100%;
+    margin: 0.5em;
+    border-radius: 15px;
+    justify-self: center;
+    text-align: center;
+
+    /* https://www.letsbuildui.dev/articles/how-to-animate-borders-in-css/ */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        display: block;
+        background-color: var(--text-hover);
+        height: 31em;
+        width: 2em;
+        position: absolute;
+        animation: rotate 5s linear forwards infinite;
+        z-index: 0;
+    }
+}
+
+.subject {
     cursor: pointer;
     width: 100%;
     padding: 0.5em;
     border-radius: 15px;
-    background: #222;
-    color: #FF6600;
+    background-color: var(--palette-secondary);
+    color: var(--text-secondary);
     position: relative;
     z-index: 1;
-    margin: 3px;
+    margin: 6px;
+    text-align: start;
 
     &:hover {
-        color: #222;
-        background-color: #FF6600;
+        background-color: var(--text-primary);
         scale: 1.2;
         transition: ease-in-out;
     }
 
-    &[open] {
-        background-color: #FF6600;
-        color: #222;
-
-        summary {
-            padding-top: 0.5em;
-        }
+    li:first-of-type {
+        color: var(--text-hover);
+        margin-left: 2em;
     }
 
-    summary {
-        list-style: none;
-
-        &:hover {
-            scale: 1.2;
-        }
-    }
-
-    ul li {
+    li {
         list-style-type: none;
-        margin: 0.5em 0;
+        margin: 0.5em 0 0.5em 3.5em;
 
         a {
             text-decoration: none;
-            color: #f7f7f7;
+            color: var(--text-secondary);
             display: block;
             width: 100%;
 
             &:hover {
                 scale: 1.2;
+                color: var(--text-hover);
+                transform-origin: bottom left;
             }
         }
     }
