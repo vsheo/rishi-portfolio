@@ -7,11 +7,11 @@ let oldFont = 'font-1'
 
 
 document.querySelectorAll('.change-theme input[name="palette"]').forEach(radio => {
-    radio.addEventListener('change', (e) => {
+    radio.addEventListener('change', () => {
         let newTheme = radio.id
         body.classList.remove(oldTheme)
         body.classList.add(newTheme)
-        oldTheme = newTheme;
+        oldTheme = newTheme
     })
 })
 
@@ -22,7 +22,7 @@ document.querySelectorAll('.change-font input[name="font"]').forEach(radio => {
         let newFont = radio.id
         body.classList.remove(oldFont)
         body.classList.add(newFont)
-        oldFont = newFont;
+        oldFont = newFont
     })
 })
 

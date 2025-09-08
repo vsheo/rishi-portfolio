@@ -11,9 +11,34 @@ body {
     background-color: var(--palette-primary);
 }
 
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-content: center;
+    gap: 1em;
+    margin: 0 1em;
+    text-wrap: nowrap;
+
+    @media (min-width: 830px) {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
 h1 {
+    grid-column: 1/-1;
     text-align: center;
     font-size: 4rem;
+}
+
+fieldset {
+    display: flex;
+    justify-self: center;
+    max-width: 17.5em;
+    padding: 0.5em;
+
+    label {
+        margin: 0 0.5em;
+    }
 }
 
 .carr-container {
