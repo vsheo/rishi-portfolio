@@ -1,0 +1,41 @@
+{
+    "projects": [
+        {
+            "name": "Squad page",
+            "id": "1",
+            "repo": "https://github.com/vsheo/your-tribe-for-life-profile-card",
+            "img": "https://api.microlink.io/?url=https%3A%2F%2Fglittery-stroopwafel-dfbeb8.netlify.app%2F& screenshot=true&embed=screenshot.url",
+            "site": "https://glittery-stroopwafel-dfbeb8.netlify.app/",
+            "description": "Dit was mijn eerste project in SvelteKit. Hier heb ik geleerd wat de verschillende files in de routes map doen en hoe ik componenten kan maken en exporteren.",
+            "tags": [
+                "sveltekit",
+                "animation",
+                "framework"
+            ]
+        },
+        {
+            "name": "I Love Web",
+            "id": "2",
+            "repo": "https://github.com/vsheo/i-love-web",
+            "img": "https://api.microlink.io/?url=https%3A%2F%2Fvsheo.github.io%2Fi‑love‑web%2F&screenshot=true&embed=screenshot.url",
+            "site": "https://vsheo.github.io/i-love-web/",
+            "tags": [
+                "blogs",
+                "framework",
+                "11ty"
+            ]
+        },
+        {
+            "name": "Proof of Concept",
+            "id": "3",
+            "repo": "https://github.com/vsheo/proof-of-concept",
+            "img": "https://api.microlink.io/?url=https%3A%2F%2Fproof‑of‑concept‑rn2l.onrender.com%2F&screenshot=true&embed=screenshot.url",
+            "site": "https://proof-of-concept-rn2l.onrender.com/",
+            "tags": [
+                "frontend",
+                "svelte",
+                "ui"
+            ]
+        }
+    ]
+}
