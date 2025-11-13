@@ -1,20 +1,52 @@
 <script>
+// @ts-nocheck
+
 	export let langData
+	console.log(langData)
+
+	const colors = {
+		HTML: '#f28e2c',
+		CSS: '#4e79a7',
+		JavaScript: '#e15759',
+		Liquid: '#edc949',
+		Svelte: '#76b7b2',
+		Nunjucks: '#59a14f'
+	}
+
+	// Bereken totaal
+	const total = Object.values(langData).reduce((a, b) => a + b, 0)
+
+	// Bereken percentages en bouw conic-gradient string
+	let gradient = ''
+	let start = 0
+
+	for (const [lang, value] of Object.entries(langData)) {
+		const pct = (value / total) * 100
+		const end = start + pct
+		// @ts-ignore
+		gradient += `${colors[lang]} ${start}% ${end}%, `
+		start = end
+	}
+
+	// Verwijder de laatste comma
+	gradient = gradient.slice(0, -2)
 </script>
 
 <article class="skills">
 	<h2>Skills</h2>
+	<div class="pie-chart" style="background: conic-gradient({gradient});"></div>
 	<ul>
-		<li><span>HTML</span><span>{langData.HTML}</span></li>
-		<li><span>CSS</span><span>{langData.CSS}</span></li>
-		<li><span>JavaScript</span><span>{langData.JavaScript}</span></li>
-		<li><span>Svelte</span><span>{langData.Svelte}</span></li>
-		<li><span>Nunjucks</span><span>{langData.Nunjucks}</span></li>
+		{#each Object.entries(langData) as [lang, value]}
+			<li style="color: {colors[lang]};">
+				<span>{lang}</span>
+				<span>{Math.round((value / total) * 100)}%</span>
+			</li>
+		{/each}
 	</ul>
 </article>
 
 <style>
-    .skills {
+	.skills {
 		h2 {
 			margin-bottom: 0.5em;
 		}
@@ -30,5 +62,12 @@
 			justify-content: space-between;
 			border-bottom: 2px solid;
 		}
+	}
+
+	.pie-chart {
+		height: 7em;
+		width: 7em;
+		border-radius: 50%;
+		margin-bottom: 1em;
 	}
 </style>
