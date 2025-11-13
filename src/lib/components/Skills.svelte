@@ -1,12 +1,15 @@
 <script>
+	export let langData
 </script>
 
 <article class="skills">
 	<h2>Skills</h2>
 	<ul>
-		<li><span>HTML</span><span>30%</span></li>
-		<li><span>CSS</span><span>40%</span></li>
-		<li><span>JavaScript</span><span>20%</span></li>
+		<li><span>HTML</span><span>{langData.HTML}</span></li>
+		<li><span>CSS</span><span>{langData.CSS}</span></li>
+		<li><span>JavaScript</span><span>{langData.JavaScript}</span></li>
+		<li><span>Svelte</span><span>{langData.Svelte}</span></li>
+		<li><span>Nunjucks</span><span>{langData.Nunjucks}</span></li>
 	</ul>
 </article>
 
