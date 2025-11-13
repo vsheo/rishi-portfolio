@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
     object-fit: cover;
 }
@@ -35,7 +34,7 @@ body {
     /* font-size */
     --font-size-primary: 1rem;
     /* 64px */
-    --font-size-title-page: clamp(3rem, calc(8.5vw + 1rem), 4rem);
+    --font-size-title-page: clamp(2rem, calc(8.5vw + 1rem), 3rem);
     /* 36px */
     --font-size-title-article: clamp(1.35rem, calc(3vw + 1rem), 2rem);
     /* 28px */
@@ -125,7 +124,6 @@ h2,
 h3,
 h4 {
     line-height: 2.5rem;
-
 }
 
 h1 {

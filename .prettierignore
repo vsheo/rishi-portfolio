@@ -1,0 +1,28 @@
+# Build output
+.build
+.svelte-kit
+dist
+build
+
+# Node dependencies
+node_modules
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Package manager files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Miscellaneous
+README.md
+.DS_Store
+
+# IDE/editor folders
+.vscode
+.idea
