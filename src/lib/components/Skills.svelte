@@ -1,6 +1,5 @@
 <script>
 // @ts-nocheck
-
 	export let langData
 	console.log(langData)
 

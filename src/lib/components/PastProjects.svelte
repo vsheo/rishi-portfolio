@@ -83,6 +83,7 @@
 			grid-row: 1;
 			border-radius: var(--child-radius);
 			width: 100%;
+			height: auto;
 		}
 
 		p {
