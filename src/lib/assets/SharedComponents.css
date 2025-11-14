@@ -29,6 +29,7 @@ main {
 	display: grid;
     justify-content: center;
 	grid-template-columns: 1fr;
+	height: 100dvh;
 	gap: 1em;
 	padding: 0 clamp(1em, 10vw, 5em);
     margin: 2em 0;

@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import projectsData from '$lib/assets/projects.json'
 	const projects = projectsData.projects
 

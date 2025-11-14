@@ -19,6 +19,7 @@
             "repo": "https://github.com/vsheo/i-love-web",
             "img": "images/home-ilw.png",
             "site": "https://vsheo.github.io/i-love-web/",
+            "description": "Dit is de website waar ik mijn voortgang bijhoud en waar ik mijn blogs schrijf.",
             "tags": [
                 "blogs",
                 "framework",
@@ -31,6 +32,7 @@
             "repo": "https://github.com/vsheo/proof-of-concept",
             "img": "images/home-poke.png",
             "site": "https://proof-of-concept-rn2l.onrender.com/",
+            "description": "Dit is de opdracht die Triple aan stagiaires geeft. Dit was de laatste opdracht waar ik in het eerste schooljaar aan heb gewerkt. Hiermee liet ik zien wat ik allemaal kon.",
             "tags": [
                 "frontend",
                 "liquid",
@@ -43,6 +45,7 @@
             "repo": "https://github.com/vsheo/user-experience-enhanced-website",
             "img": "images/home-milledoni.png",
             "site": "https://user-experience-enhanced-website-0mef.onrender.com/",
+            "description": "Op deze website lag de focus op de user experience. Ik heb hier loading states, empty states en success states gemaakt.",
             "tags": [
                 "frontend",
                 "liquid",
