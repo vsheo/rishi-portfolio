@@ -7,8 +7,8 @@
 	<p>Recent posts:</p>
 	<ul>
 		<li><a href="#">Generated Color Palette</a></li>
-		<li><a href="#">Custom Prettier Code Formatter</a></li>
-		<li><a href="#">Corner Shape Experiments</a></li>
+		<li><a href="https://vsheo.github.io/i-love-web/Prettier%E2%80%90code%E2%80%90formatter/">Custom Prettier Code Formatter</a></li>
+		<li><a href="https://vsheo.github.io/i-love-web/Living-standards-S14/">Corner Shape Experiments</a></li>
 	</ul>
 </article>
 
