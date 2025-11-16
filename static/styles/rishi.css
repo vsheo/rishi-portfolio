@@ -23,8 +23,6 @@ body {
         --color-accent-secondary: oklch(90% 0.2 80);
     }
 
-    color: var(--color-light);
-
     /* font */
     font-family: 'SpaceMono',
     monospace;
@@ -79,7 +77,8 @@ body {
 }
 
 body {
-    background-color: var(--light-2);
+    background-color: var(--color);
+    color: var(--color-light);
 }
 
 a {
