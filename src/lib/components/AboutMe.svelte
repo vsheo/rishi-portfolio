@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="person">
+<section class="person view-1">
 	<!-- svelte-ignore a11y_missing_attribute -->
 	<h2>viresh Sheoratan</h2>
 	<img src="https://avatars.githubusercontent.com/u/107566336?v=4" />
@@ -31,6 +31,10 @@
 			</a>
 		</li>
 	</ul>
+</section>
+
+<section class="person view-2 hidden">
+	<p>va pv mnalv qh fiqibcncnC dhpiac vchh bzb</p>
 </section>
 
 <style>
@@ -71,5 +75,9 @@
 			justify-content: center;
 			list-style: none;
 		}
+	}
+
+	.hidden {
+		visibility: hidden;
 	}
 </style>

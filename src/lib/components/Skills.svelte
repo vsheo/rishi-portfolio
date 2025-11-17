@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 	export let langData
-	console.log(langData)
+	// console.log(langData)
 
 	const colors = {
 		HTML: '#f28e2c',

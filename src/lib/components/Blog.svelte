@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<article class="blogs">
+<section class="blogs">
 	<h2>Blogs</h2>
 	<p>Check out my <a href="#">blog website</a></p>
 	<p>Recent posts:</p>
@@ -10,7 +10,7 @@
 		<li><a href="https://vsheo.github.io/i-love-web/Prettier%E2%80%90code%E2%80%90formatter/">Custom Prettier Code Formatter</a></li>
 		<li><a href="https://vsheo.github.io/i-love-web/Living-standards-S14/">Corner Shape Experiments</a></li>
 	</ul>
-</article>
+</section>
 
 <style>
 	.blogs {

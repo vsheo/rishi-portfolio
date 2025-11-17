@@ -7,6 +7,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<link rel="stylesheet" href="styles/rishi.css" />
+	<script src="scripts/main.js" defer></script>
 </svelte:head>
 
 {@render children()}
