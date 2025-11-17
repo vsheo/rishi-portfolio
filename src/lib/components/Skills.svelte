@@ -32,7 +32,8 @@
 </script>
 
 <section class="skills grid-card">
-	<h2>Skills</h2>
+	<h2>Programming languages</h2>
+	<p><i>Based on personal github repositories</i></p>
 	<ul>
 		{#each Object.entries(langData) as [lang, value]}
 			<li style="color: {colors[lang]};">
@@ -43,7 +44,9 @@
 	</ul>
 </section>
 
-<section class="grid-card hidden">
+<section class="grid-card view-pie-chart hidden">
+	<h2>Programming languages</h2>
+	<p><i>Pie chart</i></p>
 	<div class="pie-chart" style="background: conic-gradient({gradient});"></div>
 </section>
 
@@ -67,10 +70,16 @@
 		}
 	}
 
-	.pie-chart {
-		height: 7em;
-		width: 7em;
-		border-radius: 50%;
-		margin-bottom: 1em;
+	.view-pie-chart {
+		display: flex;
+		flex-direction: column;
+
+		.pie-chart {
+			align-self: center;
+			border-radius: 50%;
+			width: clamp(10em, 50vw, 15em);
+			aspect-ratio: 1 / 1;
+			margin-bottom: 1em;
+		}
 	}
 </style>

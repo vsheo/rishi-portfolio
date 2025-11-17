@@ -33,8 +33,11 @@
 	</ul>
 </section>
 
-<section class="grid-card hidden">
-	<p>Hi, ik ben student aan de Hogeschool van Amsterdam en studeer Frontend Design & Development. Ik woon in Amsterdam en ben op zoek naar een stageplek</p>
+<section class="grid-card view-description hidden">
+	<h3>Who am I?</h3>
+	<p>Hi I am Viresh, I live in Amsterdam and I am a student at the Hogeschool van Amsterdam, studying Frontend Design & Development.</p>
+	<h3>What can I do?</h3>
+	<p>I have a good foundation in HTML and CSS, and I can build responsive, accessible, and progressively enhanced websites.</p>
 </section>
 
 <style>
@@ -61,5 +64,12 @@
 			justify-content: center;
 			list-style: none;
 		}
+	}
+
+	.view-description {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		justify-content: center;
 	}
 </style>

@@ -9,7 +9,6 @@
             "description": "Dit was mijn eerste project in SvelteKit. Hier heb ik geleerd wat de verschillende files in de routes map doen en hoe ik componenten kan maken en exporteren.",
             "tags": [
                 "sveltekit",
-                "animation",
                 "framework"
             ]
         },
@@ -21,7 +20,6 @@
             "site": "https://vsheo.github.io/i-love-web/",
             "description": "Dit is de website waar ik mijn voortgang bijhoud en waar ik mijn blogs schrijf.",
             "tags": [
-                "blogs",
                 "framework",
                 "11ty"
             ]
@@ -34,9 +32,7 @@
             "site": "https://proof-of-concept-rn2l.onrender.com/",
             "description": "Dit is de opdracht die Triple aan stagiaires geeft. Dit was de laatste opdracht waar ik in het eerste schooljaar aan heb gewerkt. Hiermee liet ik zien wat ik allemaal kon.",
             "tags": [
-                "frontend",
-                "liquid",
-                "ui"
+                "liquid"
             ]
         },
         {
@@ -47,9 +43,7 @@
             "site": "https://user-experience-enhanced-website-0mef.onrender.com/",
             "description": "Op deze website lag de focus op de user experience. Ik heb hier loading states, empty states en success states gemaakt.",
             "tags": [
-                "frontend",
-                "liquid",
-                "ui"
+                "liquid"
             ]
         }
     ]

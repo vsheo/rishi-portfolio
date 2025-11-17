@@ -29,7 +29,7 @@
 	})
 </script>
 
-<section class="projects">
+<section class="projects grid-card">
 	<h2>Projects</h2>
 
 	{#each projects as project}
@@ -43,27 +43,24 @@
 			</div>
 		</article>
 	{/each}
+</section>
 
+<section class="grid-card view-search hidden">
+	<h2>Projects</h2>
+	<h3>Filters:</h3>
+	<ul class="filter-options">
+		<li><button>First Year</button></li>
+		<li><button>Second Year</button></li>
+		<li><button>Static</button></li>
+		<li><button>Liquid</button></li>
+		<li><button>Framework</button></li>
+	</ul>
 </section>
 
 <div class="overlay" hidden></div>
 
 <style>
 	.projects {
-		/* DEFAULT STYLING */
-		grid-column: 1/-1;
-		grid-row: 1/-1;
-
-		background-color: var(--content-background);
-		box-shadow: var(--box-shadow-container-child);
-		padding: var(--content-padding);
-
-		border: var(--content-boder);
-		border-radius: var(--radius);
-		border-bottom-right-radius: var(--scoop-radius);
-		corner-bottom-right-shape: scoop;
-		/* DEFAULT STYLING */
-
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 		gap: 1em;
@@ -141,6 +138,30 @@
 	:global(.popped),
 	:global(.popped) * {
 		cursor: default;
+	}
+
+	.filter-options {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		width: min-content;
+
+		button {
+			border: 2px solid var(--dark-2);
+			color: var(--color-light);
+			background-color: var(--dark-1);
+			text-decoration: none;
+			padding: 0.5em;
+			border-radius: var(--child-radius);
+			font-size: 1.125rem;
+			text-wrap: nowrap;
+
+			&:hover {
+				color: var(--color-text-highlight);
+				background-color: var(--light-2);
+			}
+		}
 	}
 
 	.overlay {

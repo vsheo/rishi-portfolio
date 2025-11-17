@@ -12,9 +12,9 @@
 	</ul>
 </section>
 
-<section class="grid-card hidden">
-	<p>Iets komt nog hier</p>
-	<iframe src="https://giphy.com/embed/HzPtbOKyBoBFsK4hyc" width="180" height="180" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fomoduck-duck-fomo-forever-squad-HzPtbOKyBoBFsK4hyc">via GIPHY</a></p>
+<section class="grid-card view-duck hidden">
+	<p>Something will be added here</p>
+	<iframe src="https://giphy.com/embed/HzPtbOKyBoBFsK4hyc" width="180" height="180" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </section>
 
 <style>
@@ -39,5 +39,13 @@
 				flex-shrink: 0;
 			}
 		}
+	}
+
+	.view-duck {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1em
 	}
 </style>

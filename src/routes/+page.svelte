@@ -97,13 +97,21 @@
 		@media (min-width: 1024px) {
 			height: 100dvh;
 
-			.grid-cell:nth-of-type(3) {
-				grid-column: span 1;
+			.grid-cell:nth-of-type(1) {
+				grid-column: span 2;
 			}
 
+			.grid-cell:nth-of-type(3),
 			.grid-cell:nth-of-type(4) {
 				grid-column: span 3;
 				/* grid-row: 20; */
+			}
+		}
+
+		@media (min-width: 1325px) {
+			.grid-cell:nth-of-type(1),
+			.grid-cell:nth-of-type(3) {
+				grid-column: span 1;
 			}
 		}
 	}
