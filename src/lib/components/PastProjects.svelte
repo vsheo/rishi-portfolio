@@ -148,6 +148,7 @@
 		width: min-content;
 
 		button {
+			width: 100%;
 			border: 2px solid var(--dark-2);
 			color: var(--color-light);
 			background-color: var(--dark-1);
