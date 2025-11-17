@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="blogs">
+<section class="blogs grid-card">
 	<h2>Blogs</h2>
 	<p>Check out my <a href="#">blog website</a></p>
 	<p>Recent posts:</p>
@@ -12,41 +12,31 @@
 	</ul>
 </section>
 
+<section class="blogs grid-card view-3 hidden">
+	<p>Hi, ik ben student aan de Hogeschool van Amsterdam en studeer Frontend Design & Development. Ik woon in Amsterdam en ben op zoek naar een stageplek</p>
+</section>
+
 <style>
 	.blogs {
-		/* DEFAULT STYLING */
-		grid-column: 1/-1;
-		grid-row: 1/-1;
+		h2,
+		p,
+		ul li {
+			margin: 0 0 0.5em 0;
+		}
 
-		background-color: var(--content-background);
-		box-shadow: var(--box-shadow-container-child);
-		padding: var(--content-padding);
+		ul {
+			list-style: none;
+		}
 
-		border: var(--content-boder);
-		border-radius: var(--radius);
-		border-bottom-right-radius: var(--scoop-radius);
-		corner-bottom-right-shape: scoop;
-		/* DEFAULT STYLING */
-	}
+		ul li {
+			display: flex;
+			align-items: start;
+			gap: 0.5em;
 
-	h2,
-	p,
-	ul li {
-		margin: 0 0 0.5em 0;
-	}
-
-	ul {
-		list-style: none;
-	}
-
-	ul li {
-		display: flex;
-		align-items: start;
-		gap: 0.5em;
-
-		&::before {
-			content: '-';
-			flex-shrink: 0;
+			&::before {
+				content: '-';
+				flex-shrink: 0;
+			}
 		}
 	}
 </style>

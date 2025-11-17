@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="person view-1">
+<section class="person grid-card view-0">
 	<!-- svelte-ignore a11y_missing_attribute -->
 	<h2>viresh Sheoratan</h2>
 	<img src="https://avatars.githubusercontent.com/u/107566336?v=4" />
@@ -33,26 +33,12 @@
 	</ul>
 </section>
 
-<section class="person view-2 hidden">
-	<p>va pv mnalv qh fiqibcncnC dhpiac vchh bzb</p>
+<section class="person grid-card view-0 hidden">
+	<p>Hi, ik ben student aan de Hogeschool van Amsterdam en studeer Frontend Design & Development. Ik woon in Amsterdam en ben op zoek naar een stageplek</p>
 </section>
 
 <style>
 	.person {
-		/* DEFAULT STYLING */
-		grid-column: 1/-1;
-		grid-row: 1/-1;
-
-		background-color: var(--content-background);
-		box-shadow: var(--box-shadow-container-child);
-		padding: var(--content-padding);
-
-		border: var(--content-boder);
-		border-radius: var(--radius);
-		border-bottom-right-radius: var(--scoop-radius);
-		corner-bottom-right-shape: scoop;
-		/* DEFAULT STYLING */
-
 		display: grid;
 		grid-template-columns: 1fr;
 		place-items: center;
@@ -75,9 +61,5 @@
 			justify-content: center;
 			list-style: none;
 		}
-	}
-
-	.hidden {
-		visibility: hidden;
 	}
 </style>
