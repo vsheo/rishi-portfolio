@@ -31,9 +31,8 @@
 	gradient = gradient.slice(0, -2)
 </script>
 
-<article class="skills">
+<section class="skills grid-card">
 	<h2>Skills</h2>
-	<div class="pie-chart" style="background: conic-gradient({gradient});"></div>
 	<ul>
 		{#each Object.entries(langData) as [lang, value]}
 			<li style="color: {colors[lang]};">
@@ -42,25 +41,14 @@
 			</li>
 		{/each}
 	</ul>
-</article>
+</section>
+
+<section class="grid-card hidden">
+	<div class="pie-chart" style="background: conic-gradient({gradient});"></div>
+</section>
 
 <style>
 	.skills {
-		/* DEFAULT STYLING */
-		grid-column: 1/-1;
-		grid-row: 1/-1;
-
-		background-color: var(--content-background);
-		box-shadow: var(--box-shadow-container-child);
-		padding: var(--content-padding);
-
-		border: var(--content-boder);
-		border-radius: var(--radius);
-		border-bottom-right-radius: var(--scoop-radius);
-		corner-bottom-right-shape: scoop;
-		/* DEFAULT STYLING */
-
-
 		h2 {
 			margin-bottom: 0.5em;
 		}

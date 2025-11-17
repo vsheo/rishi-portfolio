@@ -103,7 +103,7 @@
 
 			.grid-cell:nth-of-type(4) {
 				grid-column: span 3;
-				grid-row: 20;
+				/* grid-row: 20; */
 			}
 		}
 	}

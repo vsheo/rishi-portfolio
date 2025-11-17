@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="person grid-card view-0">
+<section class="person grid-card">
 	<!-- svelte-ignore a11y_missing_attribute -->
 	<h2>viresh Sheoratan</h2>
 	<img src="https://avatars.githubusercontent.com/u/107566336?v=4" />
@@ -33,7 +33,7 @@
 	</ul>
 </section>
 
-<section class="person grid-card view-0 hidden">
+<section class="grid-card hidden">
 	<p>Hi, ik ben student aan de Hogeschool van Amsterdam en studeer Frontend Design & Development. Ik woon in Amsterdam en ben op zoek naar een stageplek</p>
 </section>
 

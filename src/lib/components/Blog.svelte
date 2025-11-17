@@ -12,8 +12,9 @@
 	</ul>
 </section>
 
-<section class="blogs grid-card view-3 hidden">
-	<p>Hi, ik ben student aan de Hogeschool van Amsterdam en studeer Frontend Design & Development. Ik woon in Amsterdam en ben op zoek naar een stageplek</p>
+<section class="grid-card hidden">
+	<p>Iets komt nog hier</p>
+	<iframe src="https://giphy.com/embed/HzPtbOKyBoBFsK4hyc" width="180" height="180" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fomoduck-duck-fomo-forever-squad-HzPtbOKyBoBFsK4hyc">via GIPHY</a></p>
 </section>
 
 <style>
