@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 	export let langData
 	console.log(langData)
 
@@ -46,6 +46,21 @@
 
 <style>
 	.skills {
+		/* DEFAULT STYLING */
+		grid-column: 1/-1;
+		grid-row: 1/-1;
+
+		background-color: var(--content-background);
+		box-shadow: var(--box-shadow-container-child);
+		padding: var(--content-padding);
+
+		border: var(--content-boder);
+		border-radius: var(--radius);
+		border-bottom-right-radius: var(--scoop-radius);
+		corner-bottom-right-shape: scoop;
+		/* DEFAULT STYLING */
+
+
 		h2 {
 			margin-bottom: 0.5em;
 		}
@@ -54,6 +69,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1em;
+			margin-bottom: 1em;
 		}
 
 		li {

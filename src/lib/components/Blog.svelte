@@ -13,6 +13,22 @@
 </article>
 
 <style>
+	.blogs {
+		/* DEFAULT STYLING */
+		grid-column: 1/-1;
+		grid-row: 1/-1;
+
+		background-color: var(--content-background);
+		box-shadow: var(--box-shadow-container-child);
+		padding: var(--content-padding);
+
+		border: var(--content-boder);
+		border-radius: var(--radius);
+		border-bottom-right-radius: var(--scoop-radius);
+		corner-bottom-right-shape: scoop;
+		/* DEFAULT STYLING */
+	}
+
 	h2,
 	p,
 	ul li {

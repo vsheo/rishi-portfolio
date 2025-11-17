@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 	import projectsData from '$lib/assets/projects.json'
 	const projects = projectsData.projects
 
@@ -43,14 +43,29 @@
 			</div>
 		</article>
 	{/each}
+
 </section>
 
 <div class="overlay" hidden></div>
 
 <style>
 	.projects {
+		/* DEFAULT STYLING */
+		grid-column: 1/-1;
+		grid-row: 1/-1;
+
+		background-color: var(--content-background);
+		box-shadow: var(--box-shadow-container-child);
+		padding: var(--content-padding);
+
+		border: var(--content-boder);
+		border-radius: var(--radius);
+		border-bottom-right-radius: var(--scoop-radius);
+		corner-bottom-right-shape: scoop;
+		/* DEFAULT STYLING */
+
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 		gap: 1em;
 
 		@media (min-width: 725px) {
@@ -69,6 +84,7 @@
 		gap: 0.75em;
 		background-color: var(--light-1);
 		padding: clamp(0.5em, 5vw, 1em);
+		margin-bottom: 1em;
 		border-radius: var(--radius);
 		width: 100%;
 		height: auto;

@@ -35,13 +35,10 @@
 
 <style>
 	.person {
+		/* DEFAULT STYLING */
 		grid-column: 1/-1;
 		grid-row: 1/-1;
 
-		display: grid;
-		grid-template-columns: 1fr;
-		place-items: center;
-		text-align: center;
 		background-color: var(--content-background);
 		box-shadow: var(--box-shadow-container-child);
 		padding: var(--content-padding);
@@ -50,6 +47,12 @@
 		border-radius: var(--radius);
 		border-bottom-right-radius: var(--scoop-radius);
 		corner-bottom-right-shape: scoop;
+		/* DEFAULT STYLING */
+
+		display: grid;
+		grid-template-columns: 1fr;
+		place-items: center;
+		text-align: center;
 
 		h2 {
 			grid-row: 2;
@@ -58,7 +61,7 @@
 		img {
 			border-radius: var(--radius-child);
 			align-self: center;
-			width: clamp(10em, 50vw, 15em);
+			width: clamp(10em, 25vw, 12em);
 		}
 
 		ul {
