@@ -1,9 +1,23 @@
 <script>
 	// @ts-nocheck
 	import projectsData from '$lib/assets/projects.json'
-	const projects = projectsData.projects
-
 	import { onMount } from 'svelte'
+
+	// array with all projects
+	const allProjects = projectsData.projects
+
+	// array with projects that are shown
+	let visibleProjects = allProjects
+
+	// function to change the visibleProjects
+	function filterProjects(filter) {
+		if (filter === 'all' || !filter) {
+			visibleProjects = allProjects
+		} else {
+			// if there is a filter use that to get the new array for visibleProjects
+			visibleProjects = allProjects.filter((project) => project.tags.includes(filter))
+		}
+	}
 
 	onMount(() => {
 		const cards = document.querySelectorAll('.project-card')
@@ -30,15 +44,15 @@
 		// ---------------------------------------------------------project filters---------------------------------------------------------
 		const filterButtons = document.querySelectorAll('.filter')
 
-		// filter the tag
-		function filterProjects(filter) {
-			const activeFilter = projects.filter((project) => project.tags.includes(filter))
-			return activeFilter
-		}
+		filterButtons.forEach((button) => {
+			button.addEventListener('click', () => {
+				// get the filter tag from data attribute
+				const filterTag = button.getAttribute('data-filter') || 'all'
 
-		// use fuction to get filterd projects
-		const frameworkProjects = filterProjects('framework')
-		console.log(frameworkProjects)
+				// use the attribute to filter the projects
+				filterProjects(filterTag)
+			})
+		})
 	})
 </script>
 
@@ -48,15 +62,15 @@
 	<section class="view-search">
 		<h3>Filters:</h3>
 		<ul>
-			<li><button class="filter">First Year</button></li>
-			<li><button class="filter">Second Year</button></li>
-			<li><button class="filter">Static</button></li>
-			<li><button class="filter">Liquid</button></li>
-			<li><button class="filter">Framework</button></li>
+			<li><button class="filter" data-filter="fdnd-year-1">First Year</button></li>
+			<li><button class="filter" data-filter="fdnd-year-2">Second Year</button></li>
+			<li><button class="filter" data-filter="">Static</button></li>
+			<li><button class="filter" data-filter="liquid">Liquid</button></li>
+			<li><button class="filter" data-filter="framework">Framework</button></li>
 		</ul>
 	</section>
 
-	{#each projects as project}
+	{#each visibleProjects as project}
 		<article class="project-card">
 			<h3>{project.name}</h3>
 			<img src={project.img} alt="miro link api werkt niet" />
