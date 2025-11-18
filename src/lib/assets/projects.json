@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "name": "Squad page",
+            "name": "Profile card",
             "id": "1",
             "repo": "https://github.com/vsheo/your-tribe-for-life-profile-card",
             "img": "images/home-pcard.png",

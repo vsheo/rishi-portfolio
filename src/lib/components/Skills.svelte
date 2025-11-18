@@ -35,7 +35,9 @@
 	<h2>Programming languages</h2>
 	<p><i>Based on personal github repositories</i></p>
 	<ul>
-		{#each Object.entries(langData) as [lang, value]}
+		{#each Object.entries(langData)
+			.sort((a, b) => b[1] - a[1])
+			.slice(0, 5) as [lang, value]}
 			<li style="color: {colors[lang]};">
 				<span>{lang}</span>
 				<span>{Math.round((value / total) * 100)}%</span>
