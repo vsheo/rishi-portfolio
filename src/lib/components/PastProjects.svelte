@@ -65,7 +65,7 @@
 			<li><button class="filter" data-filter="fdnd-year-1">First Year</button></li>
 			<li><button class="filter" data-filter="fdnd-year-2">Second Year</button></li>
 			<li><button class="filter" data-filter="">Static</button></li>
-			<li><button class="filter" data-filter="liquid">Liquid</button></li>
+			<li><button class="filter" data-filter="data-driven">Data Driven</button></li>
 			<li><button class="filter" data-filter="framework">Framework</button></li>
 		</ul>
 	</section>
@@ -97,18 +97,43 @@
 		}
 
 		@media (min-width: 1325px) {
-			display: grid;
-			grid-auto-flow: column;
+			grid-template-columns: min-content;
 			grid-auto-columns: 260px;
 			grid-template-rows: 1fr;
+			grid-auto-flow: column;
 			overflow-x: auto;
 			gap: 1em;
 			text-wrap: rap;
+			padding-left: 0;
+			padding-bottom: 0;
 		}
 
 		h2 {
 			grid-column: 1/-1;
 			align-self: start;
+		}
+
+		.view-search {
+			grid-column: 1/-1;
+			height: 319px;
+			
+
+			@media (min-width: 1325px) {
+				grid-column: 1;
+			}
+		}
+
+		h2, .view-search {
+			position: sticky;
+			left: 0;
+			bottom: 10px;
+			padding-left: 1rem;
+		}
+
+		.project-card {
+			@media (min-width: 1325px) {
+				grid-row: 2;
+			}
 		}
 	}
 
@@ -178,17 +203,18 @@
 	}
 
 	.view-search {
-		h3,
-		ul {
-			grid-column: 1;
-		}
+		background-color: var(--dark-1);
 
 		ul {
 			list-style: none;
 			display: flex;
-			flex-direction: column;
+			flex-wrap: wrap;
 			gap: 0.5em;
-			width: min-content;
+
+			@media (min-width: 1325px) {
+				flex-direction: column;
+				width: min-content;
+			}
 
 			button {
 				width: 100%;

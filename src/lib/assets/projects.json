@@ -1,12 +1,12 @@
 {
     "projects": [
         {
-            "name": "Profile card",
+            "name": "Profile card v3.0",
             "id": "1",
             "repo": "https://github.com/vsheo/your-tribe-for-life-profile-card",
-            "img": "images/home-pcard.png",
+            "img": "images/home-profile-card-v3.png",
             "site": "https://glittery-stroopwafel-dfbeb8.netlify.app/",
-            "description": "Dit was mijn eerste project in SvelteKit. Hier heb ik geleerd wat de verschillende files in de routes map doen en hoe ik componenten kan maken en exporteren.",
+            "description": "This was my first project in SvelteKit. Here I learned what the different files in the routes folder do and how I can create and export components.",
             "tags": [
                 "fdnd-year-2",
                 "sveltekit",
@@ -19,7 +19,7 @@
             "repo": "https://github.com/vsheo/i-love-web",
             "img": "images/home-ilw.png",
             "site": "https://vsheo.github.io/i-love-web/",
-            "description": "Dit is de website waar ik mijn voortgang bijhoud en waar ik mijn blogs schrijf.",
+            "description": "This is the website where I keep track of my progress and where I write my blogs.",
             "tags": [
                 "framework",
                 "11ty"
@@ -31,22 +31,167 @@
             "repo": "https://github.com/vsheo/proof-of-concept",
             "img": "images/home-poke.png",
             "site": "https://proof-of-concept-rn2l.onrender.com/",
-            "description": "Dit is de opdracht die Triple aan stagiaires geeft. Dit was de laatste opdracht waar ik in het eerste schooljaar aan heb gewerkt. Hiermee liet ik zien wat ik allemaal kon.",
+            "description": "This was the last sprint of the first school year. I had a new client here, Triple, part of Hypersolid. This is the onboarding assignment that Triple gives to new employees. During this sprint, I showed everything I was able to do after my first year of FDND.",
             "tags": [
                 "fdnd-year-2",
-                "liquid"
+                "data-driven"
             ]
         },
         {
-            "name": "User Experience enhanced",
+            "name": "User Experience",
             "id": "4",
             "repo": "https://github.com/vsheo/user-experience-enhanced-website",
             "img": "images/home-milledoni.png",
             "site": "https://user-experience-enhanced-website-0mef.onrender.com/",
-            "description": "Op deze website lag de focus op de user experience. Ik heb hier loading states, empty states en success states gemaakt.",
+            "description": "The focus of this website was on the user experience. I created loading states, empty states, and success states here.",
             "tags": [
                 "fdnd-year-1",
-                "liquid"
+                "data-driven"
+            ]
+        },
+        {
+            "name": "Profile card v1.0",
+            "id": "5",
+            "repo": "https://github.com/vsheo/your-tribe-profile-card",
+            "img": "images/home-profile-card-v1.png",
+            "site": "https://vsheo.github.io/your-tribe-profile-card/",
+            "description": "This was the first website I made for the FDND",
+            "tags": [
+                "fdnd-year-1",
+                "static"
+            ]
+        },
+        {
+            "name": "The Client",
+            "id": "6",
+            "repo": "https://github.com/vsheo/the-client-website",
+            "img": "images/home-mediahuis-sprint-2.png",
+            "site": "https://vsheo.github.io/the-client-website/",
+            "description": "FDND works with real clients. This was my first client, Triple, where I recreated the Veronica website with a focus on semantic HTML.",
+            "tags": [
+                "fdnd-year-1",
+                "static"
+            ]
+        },
+        {
+            "name": "All Human",
+            "id": "7",
+            "repo": "https://github.com/vsheo/all-human-accessible-website",
+            "img": "images/home-mediahuis-sprint-3.png",
+            "site": "https://vsheo.github.io/all-human-accessible-website/",
+            "description": "This was the second sprint in which I worked on the Mediahuis website. I started again from scratch, this time using a mobile first approach and with a focus on accessibility.",
+            "tags": [
+                "fdnd-year-1",
+                "static"
+            ]
+        },
+        {
+            "name": "Look and Feel",
+            "id": "8",
+            "repo": "https://github.com/vsheo/look-and-feel-corporate-identity",
+            "img": "images/home-mediahuis-sprint-4.png",
+            "site": "https://vsheo.github.io/look-and-feel-corporate-identity/",
+            "description": "This was the third sprint in which I worked on the Mediahuis website. This time, together with a team, I created one stylesheet for the brand style that we used in our individual websites.",
+            "tags": [
+                "fdnd-year-1",
+                "static"
+            ]
+        },
+        {
+            "name": "Fix the Flow",
+            "id": "9",
+            "repo": "https://github.com/vsheo/fix-the-flow-interactive-website",
+            "img": "images/home-mediahuis-sprint-5.png",
+            "site": "https://vsheo.github.io/fix-the-flow-interactive-website/",
+            "description": "This was the last sprint in which I worked on the Mediahuis website. This time, I used more JavaScript to add interactivity to the site.",
+            "tags": [
+                "fdnd-year-1",
+                "static"
+            ]
+        },
+        {
+            "name": "The Startup",
+            "id": "10",
+            "repo": "https://github.com/vsheo/the-startup-responsive-interactive-website",
+            "img": "images/home-accessdash.png",
+            "site": "https://vsheo.github.io/the-startup-responsive-interactive-website/index.html",
+            "description": "This was the last sprint of the first semester. Here I got a new client and the chance to showcase everything I learned in the first semester. The focus was on recreating designs pixel perfectly and adding a Disney principle animation.",
+            "tags": [
+                "fdnd-year-1",
+                "static"
+            ]
+        },
+        {
+            "name": "Profile card v2.0",
+            "id": "11",
+            "repo": "https://github.com/vsheo/connect-your-tribe-profile-card",
+            "img": "images/home-profile-card-v2.png",
+            "site": "https://connect-your-tribe-profile-card-cwqk.onrender.com/",
+            "description": "This was the first website I created with Liquid, where I used Express.js to set up a server. It was also the first time I hosted a website on Render.com :(",
+            "tags": [
+                "fdnd-year-1",
+                "data-driven"
+            ]
+        },
+        {
+            "name": "Squad page v2.0",
+            "id": "12",
+            "repo": "https://github.com/vsheo/connect-your-tribe-squad-page",
+            "img": "images/home-squadpage-v2.png",
+            "site": "https://connect-your-tribe-squad-page-yhqq.onrender.com/",
+            "description": "This was a group assignment where we collectively created a website with Liquid, in which the data is loaded dynamically.",
+            "tags": [
+                "fdnd-year-1",
+                "data-driven"
+            ]
+        },
+        {
+            "name": "Server-Side Rendering",
+            "id": "13",
+            "repo": "https://github.com/vsheo/server-side-rendering-server-side-website",
+            "img": "images/home-middedoni-v1.png",
+            "site": "https://server-side-rendering-server-side-website-wrba.onrender.com/",
+            "description": "This was the first sprint with a new client, Milledoni, a case toys website. Here too, I used Liquid and fetched data from Directus using fetches.",
+            "tags": [
+                "fdnd-year-1",
+                "data-driven"
+            ]
+        },
+        {
+            "name": "The web is for Everyone",
+            "id": "14",
+            "repo": "https://github.com/vsheo/the-web-is-for-everyone-interactive-functionality",
+            "img": "images/home-middedoni-v2.png",
+            "site": "https://the-web-is-for-everyone-interactive-7ked.onrender.com/",
+            "description": "Here I went a bit further with routing for the Milledoni website. This time, the focus was on creating UI states",
+            "tags": [
+                "fdnd-year-1",
+                "data-driven"
+            ]
+        },
+        {
+            "name": "Pleasurable UI",
+            "id": "15",
+            "repo": "https://github.com/vsheo/pleasurable-ui",
+            "img": "images/home-middedoni-v3.png",
+            "site": "https://pleasurable-ui-oaun.onrender.com/",
+            "description": "This was the last sprint for the Milledoni client, which was also a group assignment. The focus here was to learn more about how GitHub works, how to create branches, merge, and resolve merge conflicts.",
+            "tags": [
+                "fdnd-year-1",
+                "data-driven"
+            ]
+        },
+        {
+            "name": "Designing for Recognition",
+            "id": "16",
+            "repo": "",
+            "img": "images/",
+            "site": "",
+            "description": "This was the group project I worked on during my second school year, from sprint 2 to 6, and it is still ongoing. We organized our work following Agile Scrum practices: we set up a shared project board, defined team rules, and created both Definitions of Ready and Definitions of Done. We structured our work using user stories, planned sprints, and managed development through feature branches to ensure smooth collaboration and iterative progress.",
+            "tags": [
+                "fdnd-year-1",
+                "framework",
+                "sveltekit"
             ]
         }
     ]
