@@ -184,12 +184,12 @@
         {
             "name": "Designing for Recognition",
             "id": "16",
-            "repo": "",
-            "img": "images/",
-            "site": "",
+            "repo": "https://github.com/fdnd-agency/designingforrecognition/tree/dev",
+            "img": "images/home-dfr.png",
+            "site": "https://designingforrecognition.netlify.app/",
             "description": "This was the group project I worked on during my second school year, from sprint 2 to 6, and it is still ongoing. We organized our work following Agile Scrum practices: we set up a shared project board, defined team rules, and created both Definitions of Ready and Definitions of Done. We structured our work using user stories, planned sprints, and managed development through feature branches to ensure smooth collaboration and iterative progress.",
             "tags": [
-                "fdnd-year-1",
+                "fdnd-year-2",
                 "framework",
                 "sveltekit"
             ]
