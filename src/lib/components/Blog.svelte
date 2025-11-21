@@ -3,10 +3,10 @@
 
 <section class="blogs grid-card">
 	<h2>Blogs</h2>
-	<p>Check out my <a href="#">blog website</a></p>
+	<p>Check out my <a href="https://vsheo.github.io/i-love-web/">blog website</a></p>
 	<p>Recent posts:</p>
 	<ul>
-		<li><a href="#">Generated Color Palette</a></li>
+		<li><a href="https://vsheo.github.io/i-love-web/CSS-color-generator/">Generated Color Palette</a></li>
 		<li><a href="https://vsheo.github.io/i-love-web/Prettier%E2%80%90code%E2%80%90formatter/">Custom Prettier Code Formatter</a></li>
 		<li><a href="https://vsheo.github.io/i-love-web/Living-standards-S14/">Corner Shape Experiments</a></li>
 	</ul>
