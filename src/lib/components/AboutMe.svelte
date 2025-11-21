@@ -4,7 +4,7 @@
 <section class="person grid-card">
 	<!-- svelte-ignore a11y_missing_attribute -->
 	<h2>viresh Sheoratan</h2>
-	<img src="https://avatars.githubusercontent.com/u/107566336?v=4" />
+	<img src="images/img-me.JPG"  height="190" width="190"/>
 	<ul>
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<li>
